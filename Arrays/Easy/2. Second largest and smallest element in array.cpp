@@ -1,3 +1,6 @@
+// - Time Complexity: O(n)
+// - Space Complexity: O(1)
+
 vector<int> getSecondOrderElements(int n, vector<int> a) {
     // Write your code here.
     int largest= a[0];
