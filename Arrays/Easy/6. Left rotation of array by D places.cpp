@@ -1,29 +1,34 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-int main(){
-	int n= 11;
-	int k=7;
-	k= k%n;
-	vector<int> arr= {1, 3, 6, 11, 12, 17, 22, 26, 30, 33, 38};
-
-	int start= 0;
+// Codestudio: Rotation of array by D places towards left side
+// - Time Complexity: O(n)
+// - Space Complexity: O(1)
+vector<int> rotateArray(vector<int>arr, int k) {
+    // Write your code here.
+    int n= arr.size();
+    k= k%n;
+    
+    // Reverse the array from 0th position to kth position
+    int start= 0;
 	int end= k-1;
-	while(start<end) swap(arr[start++], arr[end--]);
+	while(start<end) 
+        swap(arr[start++], arr[end--]);
 
+    // Reverse the array from kth position to nth position
 	start= k;
 	end= n-1;
-	while(start<end) swap(arr[start++], arr[end--]);
+	while(start<end) 
+        swap(arr[start++], arr[end--]);
 
+    // Reverse the whole array
 	start= 0;
 	end= n-1;
-	while(start<end) swap(arr[start++], arr[end--]);
+	while(start<end) 
+        swap(arr[start++], arr[end--]);
 
 
-
-	while(start<end) swap(arr[start++], arr[end--]);
-	for(auto element: arr){
-		cout << element << " ";
-	}
-
+    return arr;
 }
+
+
+// Leetcode: Rotation of array by D places towards right side
+// - Time Complexity: O(n)
+// - Space Complexity: O(1)
