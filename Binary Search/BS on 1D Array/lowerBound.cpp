@@ -1,4 +1,4 @@
-// Time Complexity: O(n)
+// Time Complexity: O(log n)
 // Space Complexity: O(1)
 
 int lowerBound(vector<int> arr, int n, int x) {
