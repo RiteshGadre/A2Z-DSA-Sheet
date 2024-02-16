@@ -1,3 +1,6 @@
+// Time Complexity: O(n*n)
+// Space Complexity: O(1)
+
 void solve(){
 	int n;
 	cin >> n;
