@@ -1,3 +1,6 @@
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 int countDigit(int n){
 	int count= 0;
 	while(n){

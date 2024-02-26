@@ -1,3 +1,6 @@
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 bool isPrime(int n)
 {
 	// Write your code here.

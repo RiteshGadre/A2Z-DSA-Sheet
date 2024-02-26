@@ -1,3 +1,6 @@
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 int countDigits(int n){
 	// Write your code here.	
 	int num= n;
