@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
@@ -19,3 +22,9 @@ public:
         return -1;
     }
 };
+
+int main(){
+    Solution s1;
+    s1.search({6,7,1,2,3,4,5}, 4);
+    return 0;
+}
